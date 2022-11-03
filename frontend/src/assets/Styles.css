@@ -3,6 +3,97 @@
     padding: 0;
 }
 
+/*-------------------------------------HEADER-------------------------------------*/
+
+.header{
+    padding: 20px 0px 10px 0px;
+    display: flex;
+}
+
+.header img {
+    width: 100px;
+}
+
+.header .titulo {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0px 0px 0px 1px;
+}
+
+/*-------------------------------------NAVEGACION-------------------------------------*/
+.wrapper {
+    position:fixed;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.wrapper .menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 45px;
+    width: 45px;
+    z-index: 999;
+    box-shadow: 0px 0px 10px 10px #ceced1;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+#btn:checked~.menu-btn {
+    left: 222px;
+}
+
+.wrapper #sidebar {
+    position:fixed;
+    height: 100%;
+    width: 270px;
+    box-shadow: 0px 0px 10px 10px #ceced1;
+    overflow: hidden;
+    left: -270px;
+    transition: all 0.3s ease;
+}
+
+#btn:checked~#sidebar {
+    left: 0;
+}
+
+#sidebar .title {
+    /*border-bottom: 1px solid #ceced1;*/
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+}
+
+#sidebar .list-items {
+    list-style: none;
+}
+
+#sidebar .list-items li {
+    padding-left: 40px;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+#sidebar .list-items li:hover {
+    box-shadow: 0px 0px 10px 10px #ceced1;
+}
+
+#sidebar .list-items li #linea {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 
 /*-------------------------------------LOGIN-------------------------------------*/
 .login { 
@@ -13,7 +104,7 @@
     border-radius: 25px;
     box-shadow: 0px 0px 10px 10px #ceced1;
     width: 480px;
-    margin: 0px auto 0px auto;
+    margin: 40px auto 0px auto;
 }
 
 .login .iconoprincipal {  
@@ -62,10 +153,7 @@
     margin: 0px 18% 0px 15px ; 
 }
 
-.login .links .registro #linea {
-    text-decoration: none;
-}
-
+.login .links .registro #linea,
 .login .links .clave #linea {
     text-decoration: none;
 }
@@ -87,7 +175,7 @@
     border-radius: 25px;
     box-shadow: 0px 0px 10px 10px #ceced1;
     width: 560px;
-    margin: 0px auto 0px auto;
+    margin: 40px auto 0px auto;
 }
 
 .registro .titulo {
@@ -135,7 +223,7 @@
 }
 
 .registro .links {  
-    padding: 20px 0px 40px 20px;
+    padding: 20px 0px 5px 20px;
     margin: 10px 0px 20px 0px;
     display:flex;
     font-weight: bold;
@@ -157,3 +245,44 @@
 
 /*-------------------------------------OLVIDE CLAVE-------------------------------------*/
 
+.olvideclave { 
+    text-align: center;
+}
+
+.olvideclave .contenedor {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 10px #ceced1;
+    width: 560px;
+    margin: 40px auto 0px auto;
+}
+
+.olvideclave .titulo {
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 27px;
+    font-family:Georgia, 'Times New Roman', Times, serif;    
+}
+
+.olvideclave form {
+
+    padding: 30px 0px 20px 0px;
+}
+
+.olvideclave form .textfield {
+    padding: 20px 0px 20px 0px;
+}
+
+.olvideclave form button {
+    padding: 10px 30% 10px 30% ;
+    margin: 20px 0px 20px 0px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.olvideclave form button:hover{
+    cursor: pointer;
+    box-shadow: inset -3px 3px 7px #ceced1, inset 3px 3px 5px #ceced1;
+    transform: scale(0.9);
+}

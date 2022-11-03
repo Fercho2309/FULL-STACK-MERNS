@@ -14,7 +14,7 @@ const OlvideClave = () => {
         </div>
 
         <div className='titulo'>
-          <h1>OLVIDE CLAVE</h1>
+          <h1>OLVIDE MI CONTRASEÑA</h1>
         </div>
 
         <form action="">
@@ -23,7 +23,7 @@ const OlvideClave = () => {
         </div>
 
         <button>
-          <SendOutlinedIcon sx={{ fontSize: 30 }}/>ENVIAR
+          ENVIAR
         </button>
         </form>
 
